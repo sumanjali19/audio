@@ -1,0 +1,9 @@
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt 
+
+// download the voice
+mkdir -p voices && cd voices
+curl -L -O https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium/en_US-lessac-medium.onnx
+curl -L -O https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json
+cd ..
